@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <title>Sanket Sanap (S.S.) — QA Educator • Entrepreneur • Global Speaker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio profile of Sanket Sanap (S.S.): " />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta property="og:title" content="Sanket Sanap (S.S.) — Software Test Engineer - L2">
+  <meta property="og:description" content="work history and informations">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-domain.example/">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sanket Sanap",
+    "jobTitle": "Software Test Enginner - L2",
+    "image": "https://your-domain.example/assets/profile.png",
+    "url": "https://your-domain.example/",
+    "sameAs": [
+      "https://in.linkedin.com/in/sanket-sanap-a24a71121",
+      "mailto:mr.sanketsanap@gmail.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Home">
+      <svg class="brand__logo" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12 3.1l9 7.5v9.4a1 1 0 0 1-1 1h-5.2a1 1 0 0 1-1-1v-4.8H10.2v4.8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V10.6l9-7.5z"/>
+      </svg>
+      <span class="brand__name">Sanket Sanap (S.S.)</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">Summary</a>
+      <a href="#stats">Automation work</a>
+      <a href="#portfolio-tabs">Project Discover</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span class="sun">☀️</span><span class="moon">🌙</span>
+    </button>
+  </header>
+
+  <section id="about" class="hero">
+    <div class="hero__bg">
+      <img src="assets/bg_automation.jpg" alt="" aria-hidden="true">
+      <div class="hero__bg-overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__identity">
+        <!-- Add your own profile image at assets/profile.png -->
+        <img src="assets/profile.png" alt="Portrait of Sanket Sanap" class="hero__avatar">
+        <div>
+          <h1>Sanket Sanap (S.S.)</h1>
+          <p class="roles">Software Test Engineer - L2</p>
+          <p class="contact-inline">
+            <a href="tel:+919960065549">+91 9960065549</a> ·
+            <a href="mailto:mr.sanketsanap@gmail.com">mr.sanketsanap@gmail.com</a> ·
+            <a href="https://in.linkedin.com/in/sanket-sanap-a24a71121" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero__cta">
+        <a class="btn primary" href="#portfolio-tabs">View My Work</a>
+        <a class="btn primary" href="#experience">Experience</a>
+      </div>
+      
+    </div>
+  </section>
+  
+
+<!-- Professional Summary (full-bleed + theme-aware) -->
+<section class="ss-bio-section ss-fullbleed-100vw" aria-labelledby="ss-bio-title">
+  <div class="ss-bio-container">
+    <h3 id="ss-bio-title" class="ss-bio-title">Professional Summary</h3>
+
+    <h2 class="ss-bio-info">
+      Over the last three and a half years, I have cultivated a comprehensive understanding of modern application architecture and its critical role in delivering robust software solutions. My experience includes fostering close collaboration with development teams and embedding testing practices as an integral part of the software development lifecycle, ensuring quality from inception to deployment.
+    </h2>
+
+    <h2 class="ss-bio-info">
+      In addition to mastering testing frameworks, I have broadened my technical expertise to encompass version control systems and advanced automation tools. My hands-on experience spans technologies such as Python, Java, Robot Framework, JIRA, RTC, Selenium, Git, BDD with Cucumber, and Appium. These tools have enabled me to streamline workflows, maintain efficient test code repositories, and promote seamless collaboration across teams.
+    </h2>
+
+    <h2 class="ss-bio-info">
+      Furthermore, I have successfully integrated CI/CD pipelines using Jenkins, automating test execution and accelerating delivery cycles. This approach has significantly enhanced productivity, reduced manual effort, and ensured consistent, high-quality releases. My commitment to continuous improvement and technical excellence empowers me to deliver software solutions that meet and exceed industry standards.
+    </h2>
+  </div>
+</section>
+
+
+
+
+  <section id="stats" class="stats" aria-labelledby="stats-title">
+    <h2 id="stats-title">Impact in Numbers</h2>
+    <div class="stats__grid" id="statsGrid"></div>
+  </section>
+
+  <section id="portfolio-tabs" class="tabs" aria-labelledby="tabs-title">
+    <div class="tabs__header">
+      <h2 id="tabs-title">Discover My Work</h2>
+      <p class="subtitle">Journey milestones, client projects, skills, achievements, and social presence.</p>
+    </div>
+
+    <div class="tablist" role="tablist" aria-label="Portfolio Sections">
+      <button role="tab" aria-selected="true" aria-controls="panel-journey" id="tab-journey">Journey</button>
+      <button role="tab" aria-selected="false" aria-controls="panel-projects" id="tab-projects">Projects</button>
+      <button role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills">Skills</button>
+      <button role="tab" aria-selected="false" aria-controls="panel-achievements" id="tab-achievements">Achievements</button>
+      <button role="tab" aria-selected="false" aria-controls="panel-social" id="tab-social">Social</button>
+    </div>
+
+    <div id="panel-journey" role="tabpanel" aria-labelledby="tab-journey" class="tabpanel is-active">
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+
+    <div id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" class="tabpanel">
+      <div class="card-grid" id="projectsGrid"></div>
+    </div>
+
+    <div id="panel-skills" role="tabpanel" aria-labelledby="tab-skills" class="tabpanel">
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+
+    <div id="panel-achievements" role="tabpanel" aria-labelledby="tab-achievements" class="tabpanel">
+      <div class="card-grid" id="achievementsGrid"></div>
+    </div>
+
+    <div id="panel-social" role="tabpanel" aria-labelledby="tab-social" class="tabpanel">
+      <div class="card-grid" id="socialGrid"></div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience" aria-labelledby="exp-title">
+    <h2 id="exp-title">Experience</h2>
+
+    <article class="exp-card">
+      <header class="exp-head">
+        <h3>Software Test Engineer — L2</h3>
+        <p class="exp-meta">Visteon Corporation, Pune · 2022–Present</p>
+      </header>
+      <ul class="exp-list">
+        <li>Led end-to-end infotainment system testing for automotive platforms, validating Android Auto, Apple CarPlay, Bluetooth, USB media, Reverse Camera Display (RVC), navigation systems, and touchscreen UI under real-world driving and connectivity scenarios.</li>
+        <li>Designed and implemented robust automation frameworks using Python, Appium, Selenium, and Robot Framework, enabling scalable functional and regression testing across multiple OEM infotainment programs.</li>
+        <li>Developed BDD-based test scenarios using Cucumber, translating complex automotive requirements into readable, maintainable test cases aligned with business and system-level expectations.</li>
+        <li>Integrated automation suites into Jenkins CI/CD pipelines, enabling continuous validation, early defect detection, and faster feedback during development and release cycles.</li>
+        <li>Performed API testing, performance testing, and reliability validation for connectivity features such as Bluetooth, Wi-Fi, and smartphone integration, ensuring system stability across diverse automotive conditions.</li>
+        <li>Built Python-based utilities for log parsing, KPI measurement, and automated test result reporting, improving test visibility and enabling data-driven quality decisions for cross-functional teams.</li>
+        <li>Optimized version control and team collaboration using Git, implementing effective branching and merging strategies to support parallel development and testing activities.</li>
+        <li>Collaborated with cross‑functional teams (developers, product owners, QA engineers) to align test strategies with evolving infotainment requirements and OEM standards.</li>
+        <li>Led sanity, smoke, issue prone, KPI, stability, and performance test suites, ensuring robust validation across multiple release cycles and OEM platforms.</li>
+      <p class="exp-highlight">Achievement: Increased test coverage by <strong>67%</strong> via <strong>3000+</strong> scripts across projects.</p>
+      <p class="exp-highlight">Achievement: <strong>90%</strong> Media (Wired/Wireless connectivity, Tuner, Audio) Test coverage</p>
+      <p class="exp-highlight">Achievement: <strong>96%</strong> Connectivity (Multiple Wired/Wireless connectivity) Test coverage </p>
+    </article>
+
+    <aside class="edu-lang">
+      <div>
+        <h3>Education</h3>
+        <p><strong>PG-Diploma in DAC (C-DAC)</strong> — CDAC center, Thiruanantpuram</p>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <p><strong>B.E. (Electrical Engineering)</strong> — Savitribai Phule Pune University, 2020</p>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <p>Marathi (Native) · Hindi (Native) · English (Proficient)</p>
+      </div>
+    </aside>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let’s Connect</h2>
+    <p>Ready to collaborate, learn, or transform your Automation Test journey?</p>
+    <div class="contact-buttons">
+      <a class="btn primary" href="mailto:mr.sanketsanap@gmail.com">Email</a>
+      <a class="btn primary" href="tel:+919960065549">Call</a>
+      <a class="btn primary" href="https://in.linkedin.com/in/sanket-sanap-a24a71121" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sanket Sanap (S.S.). All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
