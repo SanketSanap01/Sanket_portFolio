@@ -196,10 +196,16 @@ const data = {
       link: "#"
     },
     {
-      title: "Udemy",
-      meta: "Future instructor profile",
+      title: "PortFolio",
+      meta: "Connect with PortFolio",
       img: "social_udemy.jpg",
-      link: "#"
+      link: "https://sanketsanap01.github.io/Sanket_portFolio/"
+    },
+    {
+      title: "Resume",
+      meta: "Download Resume",
+      img: "social_udemy.jpg",
+      link: "SanketSanap_AutomationTestEngg.pdf"
     }
   ]
 };
