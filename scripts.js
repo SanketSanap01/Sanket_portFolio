@@ -191,20 +191,20 @@ const data = {
     },
     {
       title: "YouTube",
-      meta: "Coming soon: QA videos",
+      meta: "Coming soon: QA videos and MoTo - Vlogs",
       img: "social_youtube.jpg",
-      link: "#"
+      link: "https://www.youtube.com/@sanketsanap3824/playlists"
     },
     {
       title: "PortFolio",
       meta: "Connect with PortFolio",
-      img: "social_udemy.jpg",
+      img: "social_portfolio.jpg",
       link: "https://sanketsanap01.github.io/Sanket_portFolio/"
     },
     {
       title: "Resume",
       meta: "Download Resume",
-      img: "social_udemy.jpg",
+      img: "social_Resume.jpg",
       link: "SanketSanap_AutomationTestEngg.pdf"
     }
   ]
