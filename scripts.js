@@ -90,7 +90,8 @@
 const data = {
   stats: [
     { value: 3000, label: "Automated Scripts Built" },
-    { value: 67,   label: "Test Coverage Increase (%)" },
+    { value: 67,   label: "Test Requirement Coverage (%)" },
+    { value: 916,    label: "Issues found using Automation"},
     { value: 3.6,  label: "Years Experience" },
     { value: 5,    label: "Major OEM Programs" }
   ],
@@ -152,30 +153,32 @@ const data = {
   ],
 
   skills: {
-    automation: ["Python", "Java", "Appium", "Selenium", "Robot Framework"],
-    process:    ["BDD (Cucumber)", "JIRA", "RTC", "Git", "CI/CD (Jenkins)"],
-    testing:    ["API Testing", "Performance & Reliability", "UI Functional & Regression"],
-    extras:     ["Log Parsing", "KPI Measurement", "Result Reporting"]
+    automation: ["Python", "Java", "Selenium", "Robot Framework"],
+    process:    ["BDD (Cucumber)", "JIRA", "Appium", "RTC", "Git", "CI/CD (Jenkins)"],
+    testing:    ["API Testing", "Performance & Reliability", "UI Functional & Regression", "Sanity & Smoke Test", "Issues Prone Test"],
+    extras:     ["KPI Testing", "log analysis", "Result Reporting"]
   },
 
   achievements: [
     {
-      title: "60% test coverage improvement",
-      meta: "Achieved via 3000+ scripts across projects",
+      title: "67+ % test coverage improvement",
+      meta: "Achieved via 3000+ Test scripts across projects",
       img: "ach1.jpg",
-      link: "#"
+    },
+    {
+      title: "Issue Reporting Using Automation",
+      meta: "915+ % Issue Reporting Using Automation",
+      img: "ach4.jpg",
     },
     {
       title: "Automation Frameworks",
-      meta: "Continuous validation integrated with CI/CD pipelines",
+      meta: "Continuous validation integrated job testing with CI/CD pipelines",
       img: "ach2.jpg",
-      link: "#"
     },
     {
-      title: "Connectivity & Infotainment QA",
-      meta: "AA/CarPlay, Bluetooth, USB, Navigation, RVC",
+      title: "Connectivity & Media, Power Requirement Test",
+      meta: "AA/CarPlay (Wired / Wirelss), Bluetooth, USB, Navigation, RVC, Power",
       img: "ach3.jpg",
-      link: "#"
     }
   ],
 
