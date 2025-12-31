@@ -133,7 +133,7 @@ const data = {
       link: "https://www.skoda-auto.co.in/shopping/skoda-kylaq-accessories"
     },
     {
-      title: "Mahindra — XUV-300, XUV-400. XUV- 700 (old and latest), Thar-Roxx",
+      title: "Mahindra — XUV-3X0, XUV-400. XUV- 700 (old and latest), Thar-Roxx",
       meta: "A modern vehicle infotainment system featuring a high‑resolution touchscreen, smartphone integration, GPS navigation, and multiple connectivity options. Enhanced with front/rear cameras for safety and validated through comprehensive test suites covering performance, stability, and boot operations.",
       img: "event_mahindra.png",
       link: "https://auto.mahindra.com/press-release/mahindra-launches-the-suv-thar-roxx.html"
@@ -209,7 +209,6 @@ const data = {
     }
   ]
 };
-
 
 /* ============================================================================
    4) STATS: render grid + animate counters when visible
