@@ -111,7 +111,7 @@ const data = {
     },
     {
       year: "2023–2025",
-      text: "Software Test Engineer (L2), specializing in advanced infotainment testing and automation for leading automotive programs. Key contributions include Skoda Kushaq, Mahindra Thar Rox, XUV300, Tata Punch and Punch EV, Harley‑Davidson, Jaguar, and Land Rover platforms."
+      text: "Software Test Engineer (L2), specializing in advanced infotainment testing and automation for leading automotive programs. Key contributions include Skoda Kushaq, Mahindra Thar Rox, XUV3X0, Tata Punch and Punch EV, Harley‑Davidson, Jaguar, and Land Rover platforms."
     },
     {
       year: "Now",
