@@ -179,6 +179,18 @@ const data = {
       title: "Connectivity & Media, Power Requirement Test",
       meta: "AA/CarPlay (Wired / Wirelss), Bluetooth, USB, Navigation, RVC, Power",
       img: "ach3.jpg",
+    },
+    {
+      title: "Projects Reward - Connectivity",
+      meta: "Delivered across JLR, Mahindra, and Tata Skylark, ensuring reliable connectivity features and timely releases",
+      img: "ach5.png",
+      link: "Projects_Rewards.png",
+    },
+    {
+      title: "Projects Completion Awards ",
+      meta: "For outstanding accomplishment, commitment, hard work and creating business impact",
+      img: "ach5.png",
+      link: "Sanket_Sanap_Silver_Award.pdf",
     }
   ],
 
