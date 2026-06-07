@@ -4,15 +4,10 @@
    Author: Sanket Sanap (S.S.)
    ============================================================================ */
 
-
-/* ============================================================================
-   1) THEME: data-theme + localStorage + OS sync + toggle
-   ============================================================================ */
 (function initTheme() {
   const root = document.documentElement;
   const storageKey = "theme";                 // "light" | "dark"
 
-  // Safe matchMedia setup (works on modern + legacy with guards)
   const mql = (typeof window.matchMedia === "function")
     ? window.matchMedia("(prefers-color-scheme: dark)")
     : null;
@@ -20,7 +15,6 @@
   const systemPrefersDark = !!mql && !!mql.matches;
   const savedTheme = safeGetLocalStorage(storageKey);  // may be null
 
-  // Apply theme and emit optional event for other components
   function applyTheme(mode, source = "init") {
     // Ensure only "light" or "dark" are applied
     if (mode !== "light" && mode !== "dark") mode = "light";
@@ -34,18 +28,14 @@
     }
   }
 
-  // Initial apply: prefer saved theme; else fallback to system preference
   applyTheme(savedTheme ?? (systemPrefersDark ? "dark" : "light"), "init");
 
-  // Keep syncing to OS if user hasn't stored a preference
   if (!savedTheme && mql) {
-    // Modern browsers
     if (typeof mql.addEventListener === "function") {
       mql.addEventListener("change", (e) => {
         applyTheme(e.matches ? "dark" : "light", "system");
       });
     }
-    // Legacy browsers
     else if (typeof mql.addListener === "function") {
       mql.addListener((e) => {
         applyTheme(e.matches ? "dark" : "light", "system");
@@ -53,7 +43,6 @@
     }
   }
 
-  // Toggle button (class=".theme-toggle")
   const toggle = document.querySelector(".theme-toggle");
   if (toggle) {
     toggle.setAttribute("aria-label", "Toggle theme");
@@ -65,7 +54,6 @@
     });
   }
 
-  // Safe localStorage helpers
   function safeGetLocalStorage(key) {
     try { return localStorage.getItem(key); } catch { return null; }
   }
@@ -75,18 +63,12 @@
 })();
 
 
-/* ============================================================================
-   2) YEAR: inject current year in <span id="year">
-   ============================================================================ */
 (function injectYear() {
   const node = document.getElementById("year");
   if (node) node.textContent = new Date().getFullYear();
 })();
 
 
-/* ============================================================================
-   3) DATA: central content source
-   ============================================================================ */
 const data = {
   stats: [
     { value: 3580, label: "Automated Scripts Built" },
@@ -232,9 +214,6 @@ journey: [
   ]
 };
 
-/* ============================================================================
-   4) STATS: render grid + animate counters when visible
-   ============================================================================ */
 function renderStatsGrid(containerId = "statsGrid", stats = data.stats) {
   const grid = document.getElementById(containerId);
   if (!grid) return;
@@ -257,7 +236,6 @@ function renderStatsGrid(containerId = "statsGrid", stats = data.stats) {
     grid.appendChild(card);
   });
 
-  // Animate when grid becomes visible
   const animate = () => {
     const values = grid.querySelectorAll(".stat-value");
     values.forEach((node) => {
@@ -279,7 +257,6 @@ function renderStatsGrid(containerId = "statsGrid", stats = data.stats) {
     });
   };
 
-  // Intersection observer with guard
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
       if (e.isIntersecting) {
@@ -293,9 +270,6 @@ function renderStatsGrid(containerId = "statsGrid", stats = data.stats) {
 }
 
 
-/* ============================================================================
-   5) TIMELINE: render journey as <li>
-   ============================================================================ */
 function renderTimeline(listId = "timeline", items = data.journey) {
   const list = document.getElementById(listId);
   if (!list) return;
@@ -313,9 +287,6 @@ function renderTimeline(listId = "timeline", items = data.journey) {
 }
 
 
-/* ============================================================================
-   6) GENERIC CARD RENDERER: projects/achievements/social
-   ============================================================================ */
 function renderCards(containerId, items) {
   const container = document.getElementById(containerId);
   if (!container || !Array.isArray(items)) return;
@@ -364,9 +335,6 @@ function renderCards(containerId, items) {
 }
 
 
-/* ============================================================================
-   7) SKILLS: render grouped badges
-   ============================================================================ */
 function renderSkills(containerId = "skillsGrid", skills = data.skills) {
   const root = document.getElementById(containerId);
   if (!root) return;
@@ -399,9 +367,6 @@ function renderSkills(containerId = "skillsGrid", skills = data.skills) {
 }
 
 
-/* ============================================================================
-   8) TABS: ARIA + keyboard navigation
-   ============================================================================ */
 function setupTabs() {
   const tabsNode = document.querySelectorAll('[role="tab"]');
   const panelsNode = document.querySelectorAll('.tabpanel');
@@ -440,15 +405,11 @@ function setupTabs() {
     });
   });
 
-  // Activate preselected tab or the first one
   const preselected = tabs.find((t) => t.getAttribute("aria-selected") === "true") || tabs[0];
   if (preselected) activate(preselected);
 }
 
 
-/* ============================================================================
-   9) BOOTSTRAP: run after DOM is ready
-   ============================================================================ */
 function boot() {
   renderStatsGrid("statsGrid", data.stats);
   renderTimeline("timeline", data.journey);
