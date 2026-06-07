@@ -89,35 +89,39 @@
    ============================================================================ */
 const data = {
   stats: [
-    { value: 3000, label: "Automated Scripts Built" },
-    { value: 67,   label: "Test Requirement Coverage (%)" },
-    { value: 916,    label: "Issues found using Automation"},
-    { value: 3.6,  label: "Years Experience" },
-    { value: 5,    label: "Major OEM Programs" }
+    { value: 3580, label: "Automated Scripts Built" },
+    { value: 71,   label: "Test Requirement Coverage (%)" },
+    { value: 1023,    label: "Issues found using Automation"},
+    { value: 4,  label: "Years Experience" },
+    { value: 6,    label: "Major OEM Programs" }
   ],
 
-  journey: [
-    {
-      year: "2020",
-      text: "Graduated with a Bachelor of Engineering (Electrical) from Savitribai Phule Pune University (SPPU), Pune."
-    },
-    {
-      year: "2021",
-      text: "Completed Post Graduate Diploma in Advanced Computing (DAC) from CDAC, Thiruvananthapuram, with specialization aligned to the Bangalore region."
-    },
-    {
-      year: "2022",
-      text: "Joined Visteon Corporation — Software Test Engineer (L1), contributing to advanced infotainment testing and automation for Mahindra’s flagship programs, including XUV700, Scorpio N, and XUV400."
-    },
-    {
-      year: "2023–2025",
-      text: "Software Test Engineer (L2), specializing in advanced infotainment testing and automation for leading automotive programs. Key contributions include Skoda Kushaq, Mahindra Thar Rox, XUV3X0, Tata Punch and Punch EV, Harley‑Davidson, Jaguar, and Land Rover platforms."
-    },
-    {
-      year: "Now",
-      text: "Software Test Engineer (L2), specializing in advanced infotainment testing and automation for leading automotive programs. Key contributions include Mahindra XUV700 (latest)."
-    }
-  ],
+journey: [
+  {
+    year: "2020",
+    text: "Graduated with a Bachelor of Engineering (Electrical Engineering) from Savitribai Phule Pune University (SPPU), Pune, building a strong foundation in engineering principles and technology."
+  },
+  {
+    year: "2021",
+    text: "Successfully completed the Post Graduate Diploma in Advanced Computing (PG-DAC) from CDAC, Thiruvananthapuram, gaining expertise in software development, programming, and modern computing technologies."
+  },
+  {
+    year: "2022",
+    text: "Started professional career at Visteon Corporation as a Software Test Engineer (L1), contributing to infotainment system validation and test automation for Mahindra’s flagship vehicle programs, including XUV700, Scorpio N, and XUV400."
+  },
+  {
+    year: "2023–2024",
+    text: "Promoted to Software Test Engineer (L2), taking ownership of advanced infotainment testing, automation, and quality assurance activities across multiple global automotive platforms. Key contributions included Skoda Kushaq, Mahindra Thar Roxx, XUV 3XO, Tata Punch, Punch EV, Harley-Davidson, Jaguar, and Land Rover programs."
+  },
+  {
+    year: "2025",
+    text: "Continued as Software Test Engineer (L2), leading infotainment validation and automation initiatives for next-generation automotive platforms, with significant contributions to the latest Mahindra XUV700 programs."
+  },
+  {
+    year: "2026",
+    text: "Driving advanced infotainment testing and automation as Software Test Engineer (L2), supporting the development and quality assurance of Mahindra’s latest XUV 7XO and XUV 7XO EV platforms, ensuring robust performance, reliability, and user experience."
+  }
+],
 
   projects: [
     {
@@ -149,6 +153,12 @@ const data = {
       meta: "Performed API testing and validation of Harley‑Davidson infotainment connectivity features including Bluetooth, Wi‑Fi, and smartphone integration. Conducted performance and reliability testing under varied riding conditions, with built‑in GPS navigation and real‑time traffic updates, while also working on Arms and Echoforge related test cases.",
       img: "event_hd.png",
       link: "https://serviceinfo.harley-davidson.com/documents/2097391584475296360?hideTree=false"
+    }, 
+    {
+      title: "Mitsubishi Motoors",
+      meta: "Developed and executed automated test scenarios for Bluetooth (BT), Wi-Fi, Power, RUI, and critical functional features. Performed comprehensive validation through Sanity, Smoke, Feature Functional, Performance, and Stability test suites, ensuring high-quality software releases and reliable system performance.",
+      img: "mistubishi_image.png",
+      link: "https://www.mitsubishi-motors.ca/en/milife/car-infotainment-system-101"
     }
   ],
 
