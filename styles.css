@@ -104,7 +104,6 @@ html[data-theme="light"] .theme-toggle .moon { display: none; }
 .site-footer { padding: 1rem 1.25rem; border-top: 1px solid var(--outline); text-align: center; color: var(--muted); }
 
 
-/* =================== THEME TOKENS (sync with data-theme) =================== */
 :root[data-theme="light"] {
   --ss-bg: #f6f7fb;      /* section background */
   --ss-text: #2b2f3a;    /* body text color */
@@ -121,8 +120,6 @@ html[data-theme="light"] .theme-toggle .moon { display: none; }
   --ss-shadow: rgba(0, 0, 0, 0.35);
 }
 
-/* =================== FULL-BLEED SECTION BREAKOUT =================== */
-/* This breaks out of any centered .container or grid and spans the viewport edge-to-edge */
 .ss-fullbleed-100vw {
   position: relative;
   width: 100vw;
@@ -132,7 +129,6 @@ html[data-theme="light"] .theme-toggle .moon { display: none; }
   margin-right: -50vw;
 }
 
-/* =================== SECTION BASE STYLES =================== */
 .ss-bio-section {
   box-sizing: border-box;
   background: var(--ss-bg);
